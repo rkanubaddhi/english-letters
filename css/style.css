@@ -1,24 +1,47 @@
 .btn{
-    color : white;
     background: black;
-    margin: 5px;
-    border-width: 20px;
+    margin: 15px 10px;
+    width: 80px;
+    height: 80px;
     font-style:inherit;
     font-weight: bolder;
     font-size: 50px;
-    border-radius: 15%;
-    position: relative;
-}
-.btn div{
-    position:relative;
-    color : red;
+    border-radius: 20%;
+    box-shadow: 5px 5px 25px 5px black;
+    /* opacity: .8; */
 }
 .btn:hover{
-    transform: scale(1.1);
+    
+}
+.btn div{
+    color : white;
 }
 body{
     background-color: yellow;
 }
 .cont{
     text-align: center;
+}
+.anim{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px 3px white;
+}
+.mar{
+    background: #000;
+    height: auto;
+    width: 800px;
+    margin: 10px auto;
+    display: block;
+}
+.top{
+    color : yellowgreen;
+    font-weight: bold;
+    font-size: 30px;
+}
+.headline{
+    background: red;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
 }
