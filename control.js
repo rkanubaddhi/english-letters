@@ -1,12 +1,16 @@
 var button=document.querySelectorAll(".btn div");
 var len= button.length;
 for(var i=0;i<len;i++){
-    button[i].addEventListener("click", audio);
+    button[i].addEventListener("click", function(){
+        var letter=this.innerHTML;
+        Selector(letter);
+    });
+    
 }
-function audio(){
-    var latter=this.innerHTML;
+function Selector(letter){
     var source;
-    switch(latter){
+    letter=letter.toUpperCase();
+    switch(letter){
         case 'A':
             source="sounds/a.mp3";
             i=0;
@@ -152,15 +156,15 @@ function audio(){
             i=36;
             break;
         default:
-            document.write("Soound is not added");
+            document.write("Sound is not added");
             i=36;
         
     }
-    Play(source);
+    audio(source);
     Animation(i);
 }
 
-function Play(source){
+function audio(source){
     var aud_name= new Audio(source);
     aud_name.play();
 }
@@ -174,3 +178,8 @@ function Animation(i){
         b.style.color="white";
     },250);
 }
+//Keypress event listener by keyboard.
+document.addEventListener("keypress",function(event){
+    Key = event.key;
+    Selector(Key);
+})

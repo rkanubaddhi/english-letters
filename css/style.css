@@ -24,7 +24,8 @@ body{
 }
 .anim{
     transform: scale(1.1);
-    box-shadow: 5px 10px 20px 3px white;
+    box-shadow: 4px 4px 15px 3px white;/*(shift to right, shift down, blur, intencity) */
+    opacity: .8;
 }
 .mar{
     background: #000;
