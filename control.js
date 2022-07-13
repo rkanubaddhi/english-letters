@@ -4,8 +4,7 @@ for(var i=0;i<len;i++){
     button[i].addEventListener("click", function(){
         var letter=this.innerHTML;
         Selector(letter);
-    });
-    
+    });   
 }
 function Selector(letter){
     var source;
